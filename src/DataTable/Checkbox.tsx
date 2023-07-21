@@ -55,7 +55,7 @@ function Checkbox({
 			onClick={disabled ? noop : onClick}
 			name={name}
 			aria-label={name}
-			checked={checked}
+			checked={checked === true}
 			disabled={disabled}
 			{...resolvedComponentOptions}
 			onChange={noop} // prevent uncontrolled checkbox warnings -  we don't need onChange
